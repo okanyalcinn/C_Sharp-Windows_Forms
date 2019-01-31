@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alarm", "20190128_Alarm\Ala
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridViewKullanimi", "20190128_DataGridViewKullanimi\20190128_DataGridViewKullanimi\DataGridViewKullanimi.csproj", "{C1520C6C-4531-4241-9332-A3945EFF0F1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dizi_islemler", "20190128_Dizi_islemler\20190128_Dizi_islemler\Dizi_islemler.csproj", "{27C817F2-9714-41EA-8166-387AF089711E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giris_Uygulamasi", "20190128_Giris_Uygulamasi\Giris_Uygulamasi\Giris_Uygulamasi.csproj", "{C1C14717-73C9-4FD3-AAEE-3DC3A6F417AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{C1520C6C-4531-4241-9332-A3945EFF0F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1520C6C-4531-4241-9332-A3945EFF0F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1520C6C-4531-4241-9332-A3945EFF0F1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27C817F2-9714-41EA-8166-387AF089711E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27C817F2-9714-41EA-8166-387AF089711E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27C817F2-9714-41EA-8166-387AF089711E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27C817F2-9714-41EA-8166-387AF089711E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1C14717-73C9-4FD3-AAEE-3DC3A6F417AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1C14717-73C9-4FD3-AAEE-3DC3A6F417AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1C14717-73C9-4FD3-AAEE-3DC3A6F417AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1C14717-73C9-4FD3-AAEE-3DC3A6F417AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
