@@ -16,13 +16,15 @@ namespace PodEditor
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// arama metodunu çağırma (c# kaynağının tasarladığı)
+        /// </summary>
         public static RichTextBox richTextBox;
 
-        string dosya_yolu;
+        string dosya_yolu;       
 
         private void Form1_Load(object sender, EventArgs e)
-        {
+        {            
             //fontlar
             _cmbYaziTip.DrawMode = DrawMode.OwnerDrawVariable;
             FontFamily[] fonts = FontFamily.Families;
@@ -404,5 +406,6 @@ namespace PodEditor
             ////
             //aramaForm.Show();
         }
+        
     }
 }

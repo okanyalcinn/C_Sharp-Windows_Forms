@@ -114,6 +114,7 @@
             this._btnTumunuDegistir.TabIndex = 7;
             this._btnTumunuDegistir.Text = "Tümünü Değiştir";
             this._btnTumunuDegistir.UseVisualStyleBackColor = true;
+            this._btnTumunuDegistir.Click += new System.EventHandler(this._btnTumunuDegistir_Click);
             // 
             // groupBox1
             // 

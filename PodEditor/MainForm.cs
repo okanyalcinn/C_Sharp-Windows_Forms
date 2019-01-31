@@ -27,9 +27,9 @@ namespace PodEditor
             form.Show();
         }
 
-        private void bulToolStripMenuItem_Click(object sender, EventArgs e)
+        private void MainForm_Load(object sender, EventArgs e)
         {
-            
+            //this.WindowState = FormWindowState.Maximized; // form ilk açıldığında tam ekran açılsın
         }
     }
 }
