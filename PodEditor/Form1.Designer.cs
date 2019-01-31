@@ -52,6 +52,7 @@
             this.tumunuSecToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.silToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tümünüYenileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bulToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yazıTipiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kalınToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eğikToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,8 +65,8 @@
             this.renkSeçToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paragrafToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.solaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sağaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sağaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.sağaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.maddeİşaretiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.podCastCvToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -214,9 +215,10 @@
             this.kopyalaToolStripMenuItem,
             this.yapistirToolStripMenuItem,
             this.toolStripSeparator4,
-            this.tumunuSecToolStripMenuItem,
+            this.bulToolStripMenuItem,
             this.silToolStripMenuItem,
-            this.tümünüYenileToolStripMenuItem});
+            this.tümünüYenileToolStripMenuItem,
+            this.tumunuSecToolStripMenuItem});
             this.düzenToolStripMenuItem.Name = "düzenToolStripMenuItem";
             this.düzenToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.düzenToolStripMenuItem.Text = "D&üzen";
@@ -225,20 +227,20 @@
             // 
             this.geriAlToolStripMenuItem.Name = "geriAlToolStripMenuItem";
             this.geriAlToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.geriAlToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.geriAlToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.geriAlToolStripMenuItem.Text = "&Geri Al";
             // 
             // yineleToolStripMenuItem
             // 
             this.yineleToolStripMenuItem.Name = "yineleToolStripMenuItem";
             this.yineleToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.yineleToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.yineleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.yineleToolStripMenuItem.Text = "Yi&nele";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(155, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
             // 
             // kesToolStripMenuItem
             // 
@@ -246,7 +248,7 @@
             this.kesToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.kesToolStripMenuItem.Name = "kesToolStripMenuItem";
             this.kesToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.kesToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.kesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.kesToolStripMenuItem.Text = "&Kes";
             this.kesToolStripMenuItem.Click += new System.EventHandler(this.kesToolStripMenuItem_Click);
             // 
@@ -256,7 +258,7 @@
             this.kopyalaToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.kopyalaToolStripMenuItem.Name = "kopyalaToolStripMenuItem";
             this.kopyalaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.kopyalaToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.kopyalaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.kopyalaToolStripMenuItem.Text = "K&opyala";
             this.kopyalaToolStripMenuItem.Click += new System.EventHandler(this.kopyalaToolStripMenuItem_Click);
             // 
@@ -266,34 +268,41 @@
             this.yapistirToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.yapistirToolStripMenuItem.Name = "yapistirToolStripMenuItem";
             this.yapistirToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.yapistirToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.yapistirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.yapistirToolStripMenuItem.Text = "&Yapıştır";
             this.yapistirToolStripMenuItem.Click += new System.EventHandler(this.yapistirToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(155, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
             // 
             // tumunuSecToolStripMenuItem
             // 
             this.tumunuSecToolStripMenuItem.Name = "tumunuSecToolStripMenuItem";
-            this.tumunuSecToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.tumunuSecToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tumunuSecToolStripMenuItem.Text = "&Tümünü Seç";
             // 
             // silToolStripMenuItem
             // 
             this.silToolStripMenuItem.Name = "silToolStripMenuItem";
-            this.silToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.silToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.silToolStripMenuItem.Text = "Sil";
             this.silToolStripMenuItem.Click += new System.EventHandler(this.silToolStripMenuItem_Click);
             // 
             // tümünüYenileToolStripMenuItem
             // 
             this.tümünüYenileToolStripMenuItem.Name = "tümünüYenileToolStripMenuItem";
-            this.tümünüYenileToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.tümünüYenileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tümünüYenileToolStripMenuItem.Text = "Tümünü Yenile";
             this.tümünüYenileToolStripMenuItem.Click += new System.EventHandler(this.tümünüYenileToolStripMenuItem_Click);
+            // 
+            // bulToolStripMenuItem
+            // 
+            this.bulToolStripMenuItem.Name = "bulToolStripMenuItem";
+            this.bulToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bulToolStripMenuItem.Text = "Bul";
+            this.bulToolStripMenuItem.Click += new System.EventHandler(this.bulToolStripMenuItem_Click);
             // 
             // yazıTipiToolStripMenuItem
             // 
@@ -383,23 +392,23 @@
             // solaToolStripMenuItem
             // 
             this.solaToolStripMenuItem.Name = "solaToolStripMenuItem";
-            this.solaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.solaToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.solaToolStripMenuItem.Text = "Sola";
             this.solaToolStripMenuItem.Click += new System.EventHandler(this.solaToolStripMenuItem_Click);
-            // 
-            // sağaToolStripMenuItem
-            // 
-            this.sağaToolStripMenuItem.Name = "sağaToolStripMenuItem";
-            this.sağaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.sağaToolStripMenuItem.Text = "Ortala";
-            this.sağaToolStripMenuItem.Click += new System.EventHandler(this.sağaToolStripMenuItem_Click);
             // 
             // sağaToolStripMenuItem1
             // 
             this.sağaToolStripMenuItem1.Name = "sağaToolStripMenuItem1";
-            this.sağaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.sağaToolStripMenuItem1.Size = new System.Drawing.Size(145, 22);
             this.sağaToolStripMenuItem1.Text = "Sağa";
             this.sağaToolStripMenuItem1.Click += new System.EventHandler(this.sağaToolStripMenuItem1_Click);
+            // 
+            // sağaToolStripMenuItem
+            // 
+            this.sağaToolStripMenuItem.Name = "sağaToolStripMenuItem";
+            this.sağaToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.sağaToolStripMenuItem.Text = "Ortala";
+            this.sağaToolStripMenuItem.Click += new System.EventHandler(this.sağaToolStripMenuItem_Click);
             // 
             // toolStripSeparator8
             // 
@@ -635,8 +644,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem dosyaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem yeniToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acToolStripMenuItem;
@@ -664,7 +671,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem hakkindaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem podCastCvToolStripMenuItem;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -699,6 +705,9 @@
         private System.Windows.Forms.SaveFileDialog _saveDosyaKaydet;
         private System.Windows.Forms.ToolStripMenuItem silToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tümünüYenileToolStripMenuItem;
+        public System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ToolStripMenuItem bulToolStripMenuItem;
     }
 }
 

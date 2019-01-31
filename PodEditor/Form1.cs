@@ -17,6 +17,8 @@ namespace PodEditor
             InitializeComponent();
         }
 
+        public static RichTextBox richTextBox;
+
         string dosya_yolu;
 
         private void Form1_Load(object sender, EventArgs e)
@@ -385,6 +387,22 @@ namespace PodEditor
         private void sağaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             _richMetin.SelectionAlignment = HorizontalAlignment.Center;
+        }
+        AramaForm aramaForm = new AramaForm();
+        private void bulToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            aramaForm._txtArananDeger.Text = _richMetin.SelectedText;            
+            richTextBox = _richMetin;
+            aramaForm.Show();
+            MainForm mainf = new MainForm();
+            aramaForm.MdiParent = mainf.ActiveMdiChild;
+
+            //AramaForm aramaForm = new AramaForm();
+            //// ilgili form içerisinde bulunsun diye 
+            //aramaForm.Text = "Arama";
+            //aramaForm.MdiParent = this;
+            ////
+            //aramaForm.Show();
         }
     }
 }
