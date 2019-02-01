@@ -37,6 +37,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PodEditor", "PodEditor\PodE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SayiTahminOyunu", "SayiTahminOyunu\SayiTahminOyunu.csproj", "{709E5D65-2C0D-4EB9-9ACC-DA0D60E15DDC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yazdirma_Secenekleri", "Yazdirma_Secenekleri\Yazdirma_Secenekleri.csproj", "{15E9D8DA-BA4F-4D85-94F2-B26FC7DA4332}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yazdirma_liste", "Yazdirma_liste\Yazdirma_liste.csproj", "{2AE216DD-D591-4274-BD4B-9B2328D09F17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +115,14 @@ Global
 		{709E5D65-2C0D-4EB9-9ACC-DA0D60E15DDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{709E5D65-2C0D-4EB9-9ACC-DA0D60E15DDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{709E5D65-2C0D-4EB9-9ACC-DA0D60E15DDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15E9D8DA-BA4F-4D85-94F2-B26FC7DA4332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15E9D8DA-BA4F-4D85-94F2-B26FC7DA4332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15E9D8DA-BA4F-4D85-94F2-B26FC7DA4332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15E9D8DA-BA4F-4D85-94F2-B26FC7DA4332}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AE216DD-D591-4274-BD4B-9B2328D09F17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AE216DD-D591-4274-BD4B-9B2328D09F17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AE216DD-D591-4274-BD4B-9B2328D09F17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AE216DD-D591-4274-BD4B-9B2328D09F17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
