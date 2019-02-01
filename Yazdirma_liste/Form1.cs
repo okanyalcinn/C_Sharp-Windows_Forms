@@ -33,7 +33,7 @@ namespace Yazdirma_liste
             _listOgrenci.Items.Add(_txtOgrenci.Text);
             _listSinav.Items.Add(_txtSinav.Text);
             int not = int.Parse(_txtSinav.Text);
-            if (not > 50)
+            if (not >= 50)
             {
                 _listSonuc.Items.Add("Geçti");
             }
@@ -61,17 +61,24 @@ namespace Yazdirma_liste
             sayfa_genisligi = p.PaperSize.Width - p.Margins.Left - p.Margins.Right;
             x = p.Margins.Left + 2;
             y = p.Margins.Top;
+
             StringFormat ortala = new StringFormat();
             ortala.Alignment = StringAlignment.Center; // konumlandırma
+
             StringFormat saga_yasla = new StringFormat();
             saga_yasla.Alignment = StringAlignment.Far;
 
             Font ustBaslik = new Font("Thoma", 20, FontStyle.Regular);
             Font anaBaslik = new Font("Thoma", 12, FontStyle.Regular);
-            e.Graphics.DrawString(_textRaporBaslik.Text, ustBaslik, new SolidBrush(Color.Red), p.PaperSize.Width / 2, y, ortala);
+
             satir_yuksekligi = (int)e.Graphics.MeasureString("x", ustBaslik).Height;
+
+            e.Graphics.DrawString(_textRaporBaslik.Text, ustBaslik, new SolidBrush(Color.Red), p.PaperSize.Width / 2, y, ortala);
+            
             y += satir_yuksekligi + 2;
+
             Pen kalem = new Pen(Color.Red, 1);
+
             e.Graphics.DrawLine(kalem, p.Margins.Left, y, p.PaperSize.Width - p.Margins.Right, y); //çizgi oluşturma
             //sola yasla yazdır
             e.Graphics.DrawString("Öğrenci Adi", anaBaslik, new SolidBrush(Color.Red), x, y);
@@ -81,23 +88,26 @@ namespace Yazdirma_liste
             e.Graphics.DrawString("Sonuc", anaBaslik, new SolidBrush(Color.Red), x + 2 * sayfa_genisligi / 3, y);
 
             y += satir_yuksekligi + 2; //bi alt satıra geçsin diye
+            int tablo_baslangic = y;
+
             e.Graphics.DrawLine(kalem, p.Margins.Left, y, p.PaperSize.Width - p.Margins.Right, y);//çizgi oluşturma
 
 
             //--- liste elemanlarını yazdırma
             Font liste_fontu = new Font("Thoma", 12, FontStyle.Regular);
             satir_yuksekligi = (int)e.Graphics.MeasureString("x", liste_fontu).Height; //satır yüksekliği atama
-            int tablo_baslangic = 0;
+            
             while (yazdirilan_no < _listOgrenci.Items.Count)
             {
                 e.Graphics.DrawString(_listOgrenci.Items[yazdirilan_no].ToString(), liste_fontu, new SolidBrush(Color.Red), x, y);
                 // sayfa genişliği 3 te bir oranında ortada yazdır
-                e.Graphics.DrawString(_listOgrenci.Items[yazdirilan_no].ToString(), anaBaslik, new SolidBrush(Color.Red), x + sayfa_genisligi / 3, y);
+                e.Graphics.DrawString(_listSinav.Items[yazdirilan_no].ToString(), anaBaslik, new SolidBrush(Color.Red), x + sayfa_genisligi / 3, y);
                 //sayfa genişliği soluna yazdır
-                e.Graphics.DrawString(_listOgrenci.Items[yazdirilan_no].ToString(), anaBaslik, new SolidBrush(Color.Red), x + 2 * sayfa_genisligi / 3, y);
+                e.Graphics.DrawString(_listSonuc.Items[yazdirilan_no].ToString(), anaBaslik, new SolidBrush(Color.Red), x + 2 * sayfa_genisligi / 3, y);
                 y += satir_yuksekligi + 2; //bi alt satıra geçsin diye
-
-                tablo_baslangic = y;
+                
+                ///////////--------------------
+                
 
                 e.Graphics.DrawLine(kalem, p.Margins.Left, y, p.PaperSize.Width - p.Margins.Right, y); //çizgi oluşturma
                 yazdirilan_no += 1;
@@ -119,7 +129,7 @@ namespace Yazdirma_liste
             //2.çizgi
             e.Graphics.DrawLine(kalem, p.Margins.Left+sayfa_genisligi/3-2, tablo_baslangic, p.Margins.Left+sayfa_genisligi /3-2, y);
             //3. çizgi
-            e.Graphics.DrawLine(kalem, p.Margins.Left + 2 * sayfa_genisligi / 3 - 2, tablo_baslangic, p.Margins.Left + 2 * sayfa_genisligi / 3 - 2, y);
+            e.Graphics.DrawLine(kalem, p.Margins.Left + 2 * sayfa_genisligi / 3 - 2, tablo_baslangic, p.Margins.Left + 2* sayfa_genisligi / 3 - 2, y);
             //sağ dik çizgi
             e.Graphics.DrawLine(kalem, p.PaperSize.Width - p.Margins.Right, tablo_baslangic, p.PaperSize.Width - p.Margins.Right, y);
         }
