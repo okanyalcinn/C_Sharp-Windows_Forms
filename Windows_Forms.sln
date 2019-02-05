@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geth_DosyaKaydet", "Geth_Do
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ayarlar", "Ayarlar\Ayarlar.csproj", "{73C36CA8-FC86-4CBA-9A05-09E4D04A04BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OgrenciKayit", "OgrenciKayit\OgrenciKayit.csproj", "{B0892D3E-34A6-4E24-BECD-6221B88AE209}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{73C36CA8-FC86-4CBA-9A05-09E4D04A04BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73C36CA8-FC86-4CBA-9A05-09E4D04A04BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73C36CA8-FC86-4CBA-9A05-09E4D04A04BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0892D3E-34A6-4E24-BECD-6221B88AE209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0892D3E-34A6-4E24-BECD-6221B88AE209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0892D3E-34A6-4E24-BECD-6221B88AE209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0892D3E-34A6-4E24-BECD-6221B88AE209}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
