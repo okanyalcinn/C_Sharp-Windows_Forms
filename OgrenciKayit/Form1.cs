@@ -65,7 +65,7 @@ namespace OgrenciKayit
             //_txtKullaniciAdi.Text = hesapAyarlari.KullaniciAdi;
             //_txtSifre.Text = hesapAyarlari.Sifre;
             #endregion
-        }
+        } 
 
         private void _btnGiris_Click(object sender, EventArgs e)
         {

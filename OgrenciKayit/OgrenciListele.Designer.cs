@@ -35,7 +35,7 @@
             // _dtview
             // 
             this._dtview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this._dtview.Location = new System.Drawing.Point(13, 13);
+            this._dtview.Location = new System.Drawing.Point(12, 12);
             this._dtview.Name = "_dtview";
             this._dtview.Size = new System.Drawing.Size(676, 204);
             this._dtview.TabIndex = 0;

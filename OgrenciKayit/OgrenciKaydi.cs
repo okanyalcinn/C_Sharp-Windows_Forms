@@ -35,7 +35,7 @@ namespace OgrenciKayit
         SqlCommand _komut;
         SqlDataAdapter _sqlDtadptr;
         private void _btnEkle_Click(object sender, EventArgs e)
-        {
+        { 
             try
             {
                 string _sorgu = "INSERT INTO [dbo].[Ogrenciler]([Ad],[Soyad],[Bolum],[Ders]) VALUES(@ad,@soyad,@bolum,@ders )";

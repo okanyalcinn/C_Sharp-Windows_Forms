@@ -31,7 +31,7 @@ namespace OgrenciKayit
 
             //verileri data grice viewe yükeleme 
             _dtview.DataSource = _dTable;
-            _baglanti.Close();
+            _baglanti.Close(); 
         }
     }
 }
