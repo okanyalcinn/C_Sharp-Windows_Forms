@@ -1,0 +1,6 @@
+C:\windows\explorer.exe
+explorer
+C:\windows\notepad.exe
+notepad
+
+bunu farklý kaydet bin\debug klasörü içerisine

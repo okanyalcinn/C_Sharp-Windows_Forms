@@ -33,6 +33,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this._pnlSil = new System.Windows.Forms.Panel();
             this._pnlRenkDikey = new System.Windows.Forms.Panel();
+            this._picDikey = new System.Windows.Forms.PictureBox();
             this._pnlRenkSec = new System.Windows.Forms.Panel();
             this._pnlSecilenRenk = new System.Windows.Forms.Panel();
             this._trackbrKalinlik = new System.Windows.Forms.TrackBar();
@@ -43,10 +44,12 @@
             this.kaydetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.yükleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this._picCizimAlani = new System.Windows.Forms.PictureBox();
             this._dialogCalismaKaydet = new System.Windows.Forms.SaveFileDialog();
-            this.yükleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
+            this._pnlRenkDikey.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._picDikey)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._trackbrKalinlik)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._picDairePalet)).BeginInit();
             this.panel2.SuspendLayout();
@@ -80,12 +83,22 @@
             // 
             // _pnlRenkDikey
             // 
-            this._pnlRenkDikey.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("_pnlRenkDikey.BackgroundImage")));
             this._pnlRenkDikey.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this._pnlRenkDikey.Controls.Add(this._picDikey);
             this._pnlRenkDikey.Location = new System.Drawing.Point(190, 4);
             this._pnlRenkDikey.Name = "_pnlRenkDikey";
-            this._pnlRenkDikey.Size = new System.Drawing.Size(24, 201);
+            this._pnlRenkDikey.Size = new System.Drawing.Size(24, 174);
             this._pnlRenkDikey.TabIndex = 4;
+            // 
+            // _picDikey
+            // 
+            this._picDikey.Image = ((System.Drawing.Image)(resources.GetObject("_picDikey.Image")));
+            this._picDikey.Location = new System.Drawing.Point(0, 0);
+            this._picDikey.Name = "_picDikey";
+            this._picDikey.Size = new System.Drawing.Size(24, 174);
+            this._picDikey.TabIndex = 0;
+            this._picDikey.TabStop = false;
+            this._picDikey.MouseDown += new System.Windows.Forms.MouseEventHandler(this._picDikey_MouseDown);
             // 
             // _pnlRenkSec
             // 
@@ -107,7 +120,7 @@
             // 
             // _trackbrKalinlik
             // 
-            this._trackbrKalinlik.Location = new System.Drawing.Point(54, 211);
+            this._trackbrKalinlik.Location = new System.Drawing.Point(60, 198);
             this._trackbrKalinlik.Name = "_trackbrKalinlik";
             this._trackbrKalinlik.Size = new System.Drawing.Size(104, 45);
             this._trackbrKalinlik.TabIndex = 1;
@@ -118,7 +131,7 @@
             this._picDairePalet.Image = ((System.Drawing.Image)(resources.GetObject("_picDairePalet.Image")));
             this._picDairePalet.Location = new System.Drawing.Point(4, 4);
             this._picDairePalet.Name = "_picDairePalet";
-            this._picDairePalet.Size = new System.Drawing.Size(180, 201);
+            this._picDairePalet.Size = new System.Drawing.Size(180, 174);
             this._picDairePalet.TabIndex = 0;
             this._picDairePalet.TabStop = false;
             this._picDairePalet.MouseDown += new System.Windows.Forms.MouseEventHandler(this._picDairePalet_MouseDown);
@@ -148,44 +161,44 @@
             // temizleToolStripMenuItem
             // 
             this.temizleToolStripMenuItem.Name = "temizleToolStripMenuItem";
-            this.temizleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.temizleToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.temizleToolStripMenuItem.Text = "Temizle";
             // 
             // kaydetToolStripMenuItem
             // 
             this.kaydetToolStripMenuItem.Name = "kaydetToolStripMenuItem";
-            this.kaydetToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kaydetToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.kaydetToolStripMenuItem.Text = "Kaydet";
             this.kaydetToolStripMenuItem.Click += new System.EventHandler(this.kaydetToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(111, 6);
             // 
             // çıkışToolStripMenuItem
             // 
             this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
-            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.çıkışToolStripMenuItem.Text = "Çıkış";
+            // 
+            // yükleToolStripMenuItem
+            // 
+            this.yükleToolStripMenuItem.Name = "yükleToolStripMenuItem";
+            this.yükleToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.yükleToolStripMenuItem.Text = "Yükle";
+            this.yükleToolStripMenuItem.Click += new System.EventHandler(this.yükleToolStripMenuItem_Click);
             // 
             // _picCizimAlani
             // 
             this._picCizimAlani.Location = new System.Drawing.Point(4, 4);
             this._picCizimAlani.Name = "_picCizimAlani";
-            this._picCizimAlani.Size = new System.Drawing.Size(562, 443);
+            this._picCizimAlani.Size = new System.Drawing.Size(565, 446);
             this._picCizimAlani.TabIndex = 0;
             this._picCizimAlani.TabStop = false;
             this._picCizimAlani.MouseDown += new System.Windows.Forms.MouseEventHandler(this._picCizimAlani_MouseDown);
             this._picCizimAlani.MouseMove += new System.Windows.Forms.MouseEventHandler(this._picCizimAlani_MouseMove);
             this._picCizimAlani.MouseUp += new System.Windows.Forms.MouseEventHandler(this._picCizimAlani_MouseUp);
-            // 
-            // yükleToolStripMenuItem
-            // 
-            this.yükleToolStripMenuItem.Name = "yükleToolStripMenuItem";
-            this.yükleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.yükleToolStripMenuItem.Text = "Yükle";
-            this.yükleToolStripMenuItem.Click += new System.EventHandler(this.yükleToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -199,6 +212,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this._pnlRenkDikey.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this._picDikey)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._trackbrKalinlik)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._picDairePalet)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -226,6 +241,7 @@
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
         private System.Windows.Forms.SaveFileDialog _dialogCalismaKaydet;
         private System.Windows.Forms.ToolStripMenuItem yükleToolStripMenuItem;
+        private System.Windows.Forms.PictureBox _picDikey;
     }
 }
 

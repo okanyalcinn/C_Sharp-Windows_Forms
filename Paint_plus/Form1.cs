@@ -144,5 +144,12 @@ namespace Paint_plus
                 _picCizimAlani.Refresh();
             }
         }
+
+        private void _picDikey_MouseDown(object sender, MouseEventArgs e)
+        {
+            Bitmap _btmp = new Bitmap(_picDikey.Image);
+            _renk = Color.FromArgb(255, _btmp.GetPixel(e.X, e.Y));
+            _pnlSecilenRenk.BackColor = _renk;
+        }
     }
 }
