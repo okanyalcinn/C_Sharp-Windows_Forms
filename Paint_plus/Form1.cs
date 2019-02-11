@@ -85,7 +85,7 @@ namespace Paint_plus
         private void _picDairePalet_MouseMove(object sender, MouseEventArgs e)
         {
             try
-            {//panel içi ren alanı dşına çıkmasın
+            {//panel içi renk alanı dşına çıkmasın
                 if (e.X>= _picDairePalet.Width-4 || e.Y>= _picDairePalet.Height-4 || e.X < 0 || e.Y<0)
                 {
                     return;

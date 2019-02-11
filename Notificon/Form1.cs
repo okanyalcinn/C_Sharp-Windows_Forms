@@ -21,8 +21,8 @@ namespace Notificon
         private void Form1_Load(object sender, EventArgs e)
         {
             _ntifyTepsiMenu.Text = "Notificon v0.1";
-            _ntifyTepsiMenu.ContextMenuStrip = _cntxtNotMenu;
-            TextReader _dosya = File.OpenText(Application.StartupPath + "ayarlar.dat");            
+            _ntifyTepsiMenu.ContextMenu = _cntxtMenuTepsi;
+            TextReader _dosya = File.OpenText("ayarlar.bat");            
             try
             {
                 string _satir;
@@ -74,5 +74,85 @@ namespace Notificon
             }
             _dosya.Close();
         }
+
+        private void _cntxtMenuTepsi_Popup(object sender, EventArgs e)
+        {
+            _cntxtMenuTepsi.MenuItems.Clear();
+
+
+            for (int i = 0; i < _listeAdi.Items.Count; i++)
+            {
+                _cntxtMenuTepsi.MenuItems.Add(_listeAdi.Items[i].ToString(), new EventHandler(MenuTikla));
+
+
+                _cntxtMenuTepsi.MenuItems.Add("-");
+                _cntxtMenuTepsi.MenuItems.Add(menuItem1);
+                _cntxtMenuTepsi.MenuItems.Add(menuItem2);
+
+
+
+            }
+        }
+
+        private void MenuTikla(object sender, EventArgs e)
+        {
+            //dosya yolu var mı yok mu? gelen değer menu item öğeseni mi değil mi
+            string _dosya = _listeProgram.Items[(sender as MenuItem).Index-1].ToString(); //o sınıfın üyesi mi sender as
+            try
+            {
+                System.Diagnostics.Process.Start(_dosya);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Program Başlatılamadı");
+                throw;
+            }
+        }
+
+        private void menuItem1_Click(object sender, EventArgs e)
+        {
+            //formu göster
+            this.Show();
+        }
+
+        private void menuItem2_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void _btnEkle_Click(object sender, EventArgs e)
+        {
+            _listeAdi.Items.Add(_txtDosyaAdi.Text);
+            _listeProgram.Items.Add(_txtDosyaYolu.Text);
+
+
+        }
+
+        private void _btnSil_Click(object sender, EventArgs e)
+        {
+            int _sec = _listeAdi.SelectedIndex;
+            if (_sec < 0)
+            {
+                MessageBox.Show("Bir program seçmelisiniz");
+            }
+            else
+            {
+                _listeAdi.Items.RemoveAt(_sec);
+                _listeProgram.Items.RemoveAt(_sec);
+            }
+        }
+
+        private void _btnGozat_Click(object sender, EventArgs e)
+        {
+            _dialogDosyaAc.Filter = "Program dosyaları|*.exe;*.com;*.dat|" + "Bütün Dosyalar|.*.*";
+            if (_dialogDosyaAc.ShowDialog()==DialogResult.OK)
+            {
+                //dosya adını textboxa yaz
+                _txtDosyaAdi.Text = _dialogDosyaAc.FileName;
+                _txtDosyaYolu.Text = Path.GetFileNameWithoutExtension(_dialogDosyaAc.FileName); //uzantısı hariç ismini al                
+            }
+        }
+
+        
     }
 }
